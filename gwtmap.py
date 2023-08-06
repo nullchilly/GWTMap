@@ -604,8 +604,8 @@ def extract_method_info(code, service_objects):
                 "methodName": parse_parameter(code, method[0][2]),
                 "methodSignature": extract_method_signature(code, loc - 2),
                 "serviceProxy": parse_parameter(code, method[0][1]),
-                "rmtSvcIntName": parse_parameter(code, rmt_svc_int_name_value[0][0]),
-                "paramCount": parse_parameter(code, rmt_svc_int_name_value[0][1]),
+                "rmtSvcIntName": parse_parameter(code, "'"),
+                "paramCount": parse_parameter(code, "'"),
             }
 
             # If RPC mode enabled, correlate method with a service
